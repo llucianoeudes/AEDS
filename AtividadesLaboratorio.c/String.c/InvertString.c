@@ -7,6 +7,6 @@ int main()
     {
      char string[7] = "Luciano";
 
-    for(int i = 0)
+    for(int i =)
 
     }
