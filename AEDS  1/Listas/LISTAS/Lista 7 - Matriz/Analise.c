@@ -6,7 +6,8 @@
 int main() 
     {
         int mat[3][2] ,i ,j ;
-
+    
+        // preenche os valores da matriz
         for( i = 0 ; i <= 2 ; i++)  
         {
             for( j = 0 ; j <= 1 ; j++)
@@ -16,7 +17,7 @@ int main()
         }
 
         
-        for( i = 0 ; i <= 1; i++)  
+        for( i = 0 ; i <= 1; i++)  // inver a matriz e imprimi
         {
             for( j = 0 ; j <= 2 ; j++)
             {
