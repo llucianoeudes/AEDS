@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// questão 1
 int main()
 {
     int matriz[2][3];
@@ -11,7 +10,7 @@ int main()
 
     //preencher a primeira matriz 
 
-    for(int linhas = 0 ; linhas < 2 ; linhas++) 
+    for(int linhas = 0 ; linhas < 2 ; linhas++)
     {
         for(int colunas = 0 ; colunas < 3 ; colunas++)
         {
