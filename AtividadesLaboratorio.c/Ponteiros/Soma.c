@@ -12,5 +12,5 @@ int main()
         int B = 3;
     
         função(&A ,B);
-        
-    }
+
+    } 
