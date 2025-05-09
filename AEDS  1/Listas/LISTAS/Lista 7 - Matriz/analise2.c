@@ -21,7 +21,7 @@ int main()
         {
             for( j = 0 ; j <= 2 ; j++)
             {
-                printf("%i",mat[j][i] );
+                printf("%i",mat[j][i] );//print a matriz
                 printf("\n"); //   print
             }
         }
