@@ -3,8 +3,8 @@
 
 int main()
 {
-    char string = "lucianoeudes";
+    char string = "lucianoeudes";// pode ser ja definida ou pode ser inserida pelo usuario
 
-    printf("%s",string);
-    
+    printf("%s",string); //printa a string, nao esquecer %s
+
 }
