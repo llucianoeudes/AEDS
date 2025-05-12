@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int *pi;
+
+    // Aloca dinamicamente memória para um inteiro
+    pi = (int *)malloc(sizeof(int));
+
+    if (pi == NULL) {
+        printf("Erro ao alocar memória.\n");
+        return 1; // Encerra o programa com erro
+    }
+
+    // Solicita ao usuário que digite um número
+    printf("Digite um número: ");
+    scanf("%d", pi);
+
+    // Exibe o número digitado
+    printf("\nVocê digitou o número: %d\n", *pi);
+
+    // Libera a memória alocada
+    free(pi);
+
+    return 0;
+}
+
