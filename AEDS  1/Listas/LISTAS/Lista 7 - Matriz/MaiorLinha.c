@@ -16,5 +16,15 @@ float MaiorValorMatriz(float Matriz[][100], int linha, int coluna)
 
     int main()
     {
+        int colunas;
+        int linhas;
+
+        printf("\n Digite o numero de colunas da sua matriz:\n");
+        scanf("%d",&colunas);
+
+        printf("\n Digite o numero de linhas da sua matriz:\n");
+        scanf("%d",&linhas);
+    
+
 
     }
