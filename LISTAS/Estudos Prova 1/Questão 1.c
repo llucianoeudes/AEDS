@@ -23,6 +23,7 @@ int main()
             {
                 cubo = pow(Numero , 3);
                 printf("\nO CUBO DE %d E %lf \n",Numero,cubo);
+                //nada
             }
             
         
