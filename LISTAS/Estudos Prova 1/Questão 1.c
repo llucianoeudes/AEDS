@@ -11,7 +11,7 @@ int main()
         printf("\n digite um numero \n");
         scanf ("%d",&Numero);
 
-        double quadrado;
+        double quadrado; //variavel
         double cubo;
 
         if (Numero % 2 == 0)
