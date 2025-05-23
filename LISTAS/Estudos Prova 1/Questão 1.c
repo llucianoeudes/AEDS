@@ -12,7 +12,7 @@ int main()
         scanf ("%d",&Numero);
 
         double quadrado; //variavel
-        double cubo;
+        double cubo;// variavel
 
         if (Numero % 2 == 0)
             {
