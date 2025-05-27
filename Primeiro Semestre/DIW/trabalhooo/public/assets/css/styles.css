@@ -1,0 +1,133 @@
+/* Resetando margens e padding para garantir consistência no layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Navegação */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    color: #c71c1c; /* Cor vermelha no hover */
+}
+
+/* Seções da página */
+section {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Seção do autor */
+#author {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#author h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+#author p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Seção de séries favoritas */
+#favorites {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#favorites h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+#favorites div {
+    margin-bottom: 20px;
+}
+
+#favorites h3 {
+    color: #333;
+    font-size: 1.5em;
+}
+
+#favorites p {
+    color: #666;
+    font-size: 1.2em;
+}
+
+/* Links de navegação */
+a {
+    color: #1a73e8;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Títulos da página */
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Estilo de imagem */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+    
+    section {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Série - Stranger Things</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #514d4d;
+            color: white; /* Texto em branco */
+        }
+        .navbar {
+            padding: 10px;
+            background-color: #920c0c; /* Cor da navbar */
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar .explorar-link {
+            position: absolute;
+            right: 20px;
+        }
+        .container {
+            margin-top: 30px;
+        }
+        .section-title {
+            margin-top: 40px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            color: #920c0c; /* Cor da seção */
+        }
+        .series-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .series-info img {
+            width: 250px; /* Ajustando a largura da imagem */
+            height: auto;
+            border-radius: 10px; /* Bordas arredondadas */
+        }
+        .cast-card {
+            margin-bottom: 20px; /* Espaçamento entre os cards */
+        }
+        .cast-card img {
+            width: 100%; /* Imagem ocupa 100% do card */
+            height: 300px; /* Altura maior para as imagens */
+            object-fit: cover; /* Corta a imagem para preencher o espaço */
+            border-radius: 10px 10px 0 0; /* Bordas arredondadas no topo */
+        }
+        .accordion-item {
+            border: 1px solid #920c0c; /* Borda da seção de temporadas */
+            border-radius: 5px; /* Bordas arredondadas */
+        }
+        .accordion-button {
+            background-color: #920c0c; /* Cor do botão */
+            color: white; /* Cor do texto do botão */
+        }
+        .season-img {
+            width: 100%; /* Imagem ocupa 100% do espaço disponível */
+            height: auto; /* Altura automática */
+            border-radius: 5px; /* Bordas arredondadas */
+        }
+        .btn-primary {
+            background-color: #c71c1c; /* Cor vermelha para o botão */
+            border-color: #c71c1c; /* Borda vermelha */
+        }
+        .btn-primary:hover {
+            background-color: #a61212; /* Tom mais escuro ao passar o mouse */
+            border-color: #a61212; /* Borda mais escura */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html">PucFilmes</a>
+        <a href="explorar.html" class="explorar-link">Explorar</a>
+    </nav>
+
+    <!-- Container Principal -->
+    <div class="container">
+
+        <!-- Visão Geral da Série -->
+        <h2 class="section-title">Visão Geral</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="assets/img/stranger-things.jpg" alt="Stranger Things" class="img-fluid" style="border-radius: 10px; margin-bottom: 20px;">
+            </div>
+            <div class="col-md-6">
+                <p>
+                    Stranger Things é uma série de suspense e ficção científica que se passa na década de 1980, em Hawkins, Indiana. A série começa com o desaparecimento de um garoto e a aparição de uma menina com habilidades psíquicas, levando os amigos e familiares a descobrir segredos sombrios do governo e criaturas de outra dimensão.
+                </p>
+                <h5>Plataforma para Assistir:</h5>
+                <p><strong>Disponível em:</strong> Netflix</p>
+                <h5>Detalhes Gerais:</h5>
+                <ul>
+                    <li><strong>Gênero:</strong> Ficção Científica, Terror, Drama</li>
+                    <li><strong>Duração:</strong> 4 Temporadas</li>
+                    <li><strong>Ano de Lançamento:</strong> 2016</li>
+                    <li><strong>Avaliação:</strong> 8.7/10</li>
+                </ul>
+                <!-- Botão Adicionado -->
+                <a href="#" class="btn btn-primary mt-3">Incluir em Minhas Séries</a>
+            </div>
+        </div>
+
+        <!-- Seção Curiosidades -->
+        <h2 class="section-title">Curiosidades</h2>
+        <ul>
+            <li><strong>Curiosidade 1:</strong> A série foi inspirada por clássicos da década de 1980, como filmes de Steven Spielberg e Stephen King.</li>
+            <li><strong>Curiosidade 2:</strong> O título da série foi retirado de uma canção de David Bowie.</li>
+            <li><strong>Curiosidade 3:</strong> Os irmãos Duffer, criadores da série, usaram referências de cultura pop da época para construir a narrativa.</li>
+            <li><strong>Curiosidade 4:</strong> A série recebeu diversos prêmios e foi indicada a vários Emmy Awards.</li>
+        </ul>
+
+        <!-- Seção Elenco -->
+        <h2 class="section-title">Elenco</h2>
+        <div class="row">
+            <div class="col-md-4 cast-card">
+                <div class="card">
+                    <img src="assets/img/winona_ryder.jpg" class="card-img-top" alt="Joyce Byers">
+                    <div class="card-body">
+                        <h5 class="card-title">Joyce Byers</h5>
+                        <p class="card-text">Winona Ryder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cast-card">
+                <div class="card">
+                    <img src="assets/img/millie_bobby_brown.jpg" class="card-img-top" alt="Eleven">
+                    <div class="card-body">
+                        <h5 class="card-title">Eleven</h5>
+                        <p class="card-text">Millie Bobby Brown</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cast-card">
+                <div class="card">
+                    <img src="assets/img/david_harbour.jpg" class="card-img-top" alt="Jim Hopper">
+                    <div class="card-body">
+                        <h5 class="card-title">Jim Hopper</h5>
+                        <p class="card-text">David Harbour</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cast-card">
+                <div class="card">
+                    <img src="assets/img/gaten_matarazzo.jpg" class="card-img-top" alt="Dustin Henderson">
+                    <div class="card-body">
+                        <h5 class="card-title">Dustin Henderson</h5>
+                        <p class="card-text">Gaten Matarazzo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cast-card">
+                <div class="card">
+                    <img src="assets/img/caleb_mclaughlin.jpg" class="card-img-top" alt="Lucas Sinclair">
+                    <div class="card-body">
+                        <h5 class="card-title">Lucas Sinclair</h5>
+                        <p class="card-text">Caleb McLaughlin</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cast-card">
+                <div class="card">
+                    <img src="assets/img/noah_schnapp.jpeg" class="card-img-top" alt="Will Byers">
+                    <div class="card-body">
+                        <h5 class="card-title">Will Byers</h5>
+                        <p class="card-text">Noah Schnapp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção Temporadas -->
+        <h2 class="section-title">Temporadas</h2>
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                <strong>Temporada 1</strong>
+            </h3>
+            <div class="accordion-body">
+                <img src="assets/img/temporada1.jpeg" alt="Temporada 1" class="season-img">
+                <p>Na primeira temporada, um garoto desaparece e uma menina com poderes sobrenaturais aparece, revelando um mundo paralelo.</p>
+                <ul>
+                    <li>Episódio 1: O desaparecimento de Will Byers</li>
+                    <li>Episódio 2: O novo amigo</li>
+                    <li>Episódio 3: A busca por Will</li>
+                </ul>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                <strong>Temporada 2</strong>
+            </h3>
+            <div class="accordion-body">
+                <img src="assets/img/temporada2.jpeg" alt="Temporada 2" class="season-img">
+                <p>A segunda temporada explora as consequências do desaparecimento e novos desafios que os personagens enfrentam.</p>
+                <ul>
+                    <li>Episódio 1: O retorno</li>
+                    <li>Episódio 2: O novo perigo</li>
+                    <li>Episódio 3: As visões de Will</li>
+                </ul>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                <strong>Temporada 3</strong>
+            </h3>
+            <div class="accordion-body">
+                <img src="assets/img/temporada3.jpg" alt="Temporada 3" class="season-img">
+                <p>A terceira temporada se concentra na luta contra um novo inimigo e o crescimento dos personagens, enquanto eles enfrentam mudanças em suas vidas.</p>
+                <ul>
+                    <li>Episódio 1: O verão de 1985</li>
+                    <li>Episódio 2: O centro comercial</li>
+                    <li>Episódio 3: A nova ameaça</li>
+                </ul>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                <strong>Temporada 4</strong>
+            </h3>
+            <div class="accordion-body">
+                <img src="assets/img/temporada4.png" alt="Temporada 4" class="season-img">
+                <p>A quarta temporada apresenta novos personagens e conflitos, enquanto o grupo enfrenta os desafios da adolescência e das forças do mal.</p>
+                <ul>
+                    <li>Episódio 1: O começo do fim</li>
+                    <li>Episódio 2: A luta continua</li>
+                    <li>Episódio 3: O segredo revelado</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

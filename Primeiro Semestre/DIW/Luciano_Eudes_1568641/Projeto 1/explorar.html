@@ -1,0 +1,294 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador de Séries</title>
+
+    <!-- Estilo personalizado -->  
+    <style>
+        /* Fontes e cores */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1c1c1c; /* Fundo preto acinzentado */
+            color: #f0f0f5; /* Texto branco */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #333; /* Cor preta para o cabeçalho */
+            padding: 15px 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        header a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.5em;
+        }
+
+        header ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header ul li {
+            margin-left: 20px;
+        }
+
+        header ul li a {
+            color: #f0f0f5;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        header ul li a:hover {
+            color: #e74c3c; /* Tom vermelho */
+        }
+
+        /* Estilo dos filtros */
+        .filtro-wrapper {
+            width: 260px;
+            background-color: #444; /* Cor cinza escuro para o painel de filtros */
+            padding: 20px;
+            position: fixed;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .filtro-wrapper h5, .filtro-wrapper label {
+            color: white;
+        }
+
+        .filtro-container {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .filtro-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        /* Conteúdo principal */
+        .main-content {
+            margin-left: 300px;
+            padding: 30px;
+        }
+
+        h2 {
+            color: #e74c3c; /* Vermelho para títulos */
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 100%; /* Ajuste conforme necessário */
+            max-width: 400px; /* Limite de largura para a logo */
+            margin-bottom: 20px; /* Espaçamento abaixo da logo */
+        }
+
+        .series-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            position: relative;
+        }
+
+        .series-card {
+            width: calc(33.333% - 20px);
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .series-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .series-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .card-text {
+            font-size: 1em;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            background-color: #e74c3c; /* Botões em tom vermelho */
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #c0392b;
+        }
+
+        /* Ajustes responsivos */
+        @media (max-width: 900px) {
+            .series-card {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .series-card {
+                width: 100%;
+            }
+
+            .filtro-wrapper {
+                position: static;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <a href="#">Minha Série Favorita</a>
+        <ul>
+            <li><a href="index.html">PucFilmes</a></li>
+            <li><a href="#">Explorar</a></li>
+        </ul>
+    </header>
+
+    <!-- Filtros de Pesquisa -->
+    <div class="filtro-wrapper">
+        <div class="filtro-container">
+            <h5>Filtros de Pesquisa</h5>
+            <div class="form-group">
+                <label for="genero">Gênero</label>
+                <select id="genero">
+                    <option>Drama</option>
+                    <option>Comédia</option>
+                    <option>Ação</option>
+                    <option>Ficção Científica</option>
+                    <option>Terror</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ano">Ano</label>
+                <select id="ano">
+                    <option>2024</option>
+                    <option>2023</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="classificacao">Classificação</label>
+                <select id="classificacao">
+                    <option>G</option>
+                    <option>PG</option>
+                    <option>PG-13</option>
+                    <option>R</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="main-content">
+        <img src="assets/img/logo.png" alt="Logo" class="logo"> <!-- Substitua 'assets/img/logo.png' pelo caminho correto da sua logo -->
+        <h2>Séries Disponíveis</h2>
+        
+        <div class="series-container">
+            <div class="series-card">
+                <img src="assets/img/stranger-things.jpg" alt="Stranger Things">
+                <div class="card-body">
+                    <h5 class="card-title">Stranger Things</h5>
+                    <p class="card-text">Um grupo de amigos enfrenta ameaças sobrenaturais enquanto tenta desvendar os mistérios de sua pequena cidade.</p>
+                    <a href="serie.html" class="btn-primary">Ver Detalhes</a>
+                </div>
+            </div>
+
+            <div class="series-card">
+                <img src="assets/img/game-of-thrones.jpg" alt="Game of Thrones">
+                <div class="card-body">
+                    <h5 class="card-title">Game of Thrones</h5>
+                    <p class="card-text">Nobres famílias lutam pelo controle do Trono de Ferro em um mundo de fantasia cheio de intrigas e traições.</p>
+                    <a href="serie.html" class="btn-primary">Ver Detalhes</a>
+                </div>
+            </div>
+
+            <div class="series-card">
+                <img src="assets/img/wandinha.jpg" alt="Wandinha">
+                <div class="card-body">
+                    <h5 class="card-title">Wandinha</h5>
+                    <p class="card-text">A jovem Wandinha Addams navega pela vida escolar e enfrenta perigos sobrenaturais com sua inteligência afiada e personalidade sombria.</p>
+                    <a href="serie.html" class="btn-primary">Ver Detalhes</a>
+                </div>
+            </div>
+
+            <!-- Blocos adicionais de séries -->
+            <div class="series-card">
+                <img src="assets/img/the-witcher.jpg" alt="The Witcher">
+                <div class="card-body">
+                    <h5 class="card-title">The Witcher</h5>
+                    <p class="card-text">Um caçador de monstros navega por um mundo em conflito enquanto busca seu destino.</p>
+                    <a href="serie.html" class="btn-primary">Ver Detalhes</a>
+                </div>
+            </div>
+
+            <div class="series-card">
+                <img src="assets/img/breaking.png" alt="Breaking Bad">
+                <div class="card-body">
+                    <h5 class="card-title">Breaking Bad</h5>
+                    <p class="card-text">Um professor de química se torna um fabricante de metanfetaminas após ser diagnosticado com câncer.</p>
+                    <a href="serie.html" class="btn-primary">Ver Detalhes</a>
+                </div>
+            </div>
+
+            <div class="series-card">
+                <img src="assets/img/la-casa-de-papel.jpg" alt="La Casa de Papel">
+                <div class="card-body">
+                    <h5 class="card-title">La Casa de Papel</h5>
+                    <p class="card-text">Um grupo de ladrões realiza o maior assalto da história na Casa da Moeda da Espanha.</p>
+                    <a href="serie.html" class="btn-primary">Ver Detalhes</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

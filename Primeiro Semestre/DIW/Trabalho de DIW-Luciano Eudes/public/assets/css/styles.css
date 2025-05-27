@@ -1,0 +1,159 @@
+body {
+  padding: 0;
+  margin: 0 160px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #8B0000; /* Cor de fundo vermelho escuro */
+  color: #FFFFFF;
+}
+
+header {
+  font-size: 25px;
+}
+
+section {
+  margin: 50px 0px;
+}
+
+.card {
+  background-color: #191C21;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #FFFFFF;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+  color: #FFFFFF;
+}
+
+.btn {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.col-md-4 ul {
+  display: flex;
+  padding: 0px;
+}
+
+.col-md-4 li {
+  display: flex;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.serie-detalhes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+}
+
+.serie-detalhes img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.serie-detalhes h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.serie-detalhes p {
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.serie-detalhes .elenco {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.serie-detalhes .elenco .card {
+  width: 120px;
+  text-align: center;
+}
+
+.serie-detalhes .elenco img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.serie-detalhes .elenco span {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.serie-detalhes button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.serie-detalhes button:hover {
+  background-color: #0056b3;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px; 
+  list-style-type: none; 
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px; 
+  object-fit: contain; /
+}
+
+.social-icon:hover {
+  transform: scale(1.1); 
+  transition: transform 0.2s ease-in-out; 
+}
+
