@@ -11,8 +11,8 @@ int main()
         printf("\n digite um numero \n");
         scanf ("%d",&Numero);
 
-        double quadrado;
-        double cubo;
+        double quadrado; //variavel
+        double cubo;// variavel
 
         if (Numero % 2 == 0)
             {
@@ -23,6 +23,7 @@ int main()
             {
                 cubo = pow(Numero , 3);
                 printf("\nO CUBO DE %d E %lf \n",Numero,cubo);
+                //nada
             }
             
         

@@ -1,0 +1,21 @@
+{
+  "autor": [
+    {
+      "id": "1",
+      "nome": "Luciano Gomes Eudes",
+      "curso": "Ciência da Computação",
+      "email": "llucianoeudes@icloud.com",
+      "facebook": "https://www.instagram.com/llucianoeudes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw== ",
+      "instagram": "https://www.instagram.com/llucianoeudes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      "mini_bio": "Sou estudante de Ciência da Computação, apaixonado por tecnologia e programação. Desde jovem, sempre tive curiosidade sobre como as coisas funcionam, o que me levou a explorar o mundo da computação. Acredito que a tecnologia tem o poder de transformar vidas e facilitar a resolução de problemas cotidianos. Atualmente, estou em constante aprendizado, buscando novas habilidades e enfrentando desafios no universo da programação."
+    }
+  ],
+  "favoritas": [
+    {
+      "id": 94605,
+      "name": "Arcane",
+      "poster_path": "/abf8tHznhSvl9BAElD2cQeRr7do.jpg",
+      "overview": "Em meio ao conflito entre as cidades-gêmeas de Piltover e Zaun, duas irmãs lutam em lados opostos de uma guerra entre tecnologias mágicas e convicções incompatíveis."
+    }
+  ]
+}

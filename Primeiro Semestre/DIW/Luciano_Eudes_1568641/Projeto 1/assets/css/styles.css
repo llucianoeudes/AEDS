@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #727272;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+h2 {
+  margin-top: 40px;
+  text-align: center;
+  color: white; /* Cor dos títulos */
+}
+
+/* Links da Navbar */
+.navbar a {
+  color: white; /* Cor dos links na navbar */
+  text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Botões */
+.btn-primary {
+  background-color: #c71c1c; /* Cor vermelha para o botão */
+  border-color: #c71c1c; /* Borda vermelha */
+}
+
+.btn-primary:hover {
+  background-color: #a61212; /* Tom mais escuro ao passar o mouse */
+  border-color: #a61212; /* Borda mais escura */
+}
+
+/* Imagens responsivas */
+img {
+  max-width: 100%; /* Garante que as imagens sejam responsivas */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Adiciona espaçamento em listas */
+ul {
+  margin: 20px 0; /* Margem superior e inferior */
+  padding: 0; /* Remove padding padrão */
+  list-style-position: inside; /* Aumenta a legibilidade */
+}
+
+li {
+  margin-bottom: 10px; /* Espaçamento entre itens da lista */
+}

@@ -1,0 +1,16 @@
+{
+    "author": {
+        "name": "Luciano Gomes",
+        "bio": "Desenvolvedor de software e entusiasta de séries."
+    },
+    "favorites": [
+        {
+            "title": "Breaking Bad",
+            "description": "Uma história de um professor de química que se torna fabricante de metanfetamina."
+        },
+        {
+            "title": "Stranger Things",
+            "description": "Um grupo de crianças enfrenta forças sobrenaturais em sua cidade."
+        }
+    ]
+}

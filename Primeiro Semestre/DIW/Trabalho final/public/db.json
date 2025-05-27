@@ -1,0 +1,13 @@
+{
+    "aluno": {
+      "nome": "Seu Nome",
+      "foto": "sua_foto.jpg",
+      "miniBio": "Estudante apaixonado por desenvolvimento web",
+      "curso": "Ciência da Computação",
+      "turma": "2024/1",
+      "redesSociais": ["@instagram", "@github"]
+    },
+    "favoritos": [],
+    "series": []
+  }
+  
