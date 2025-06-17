@@ -7,6 +7,5 @@ using namespace std;
 
 int main()
     {
-        //declaraçoes de variaveis
-        //sentenças
+        
     }
